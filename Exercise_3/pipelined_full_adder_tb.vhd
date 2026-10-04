@@ -33,7 +33,7 @@ DUT: pipelined_full_adder port map (
     A_tb,     -- A (4-bit input)
     B_tb,     -- B (4-bit input)
     Cin_tb,   -- Cin (1-bit input)
-    clk_tb,   -- clk (1-bit input, λάθος τοποθέτηση πριν)
+    clk_tb,   -- clk (1-bit input, Γ«ΓΓ¨Γ―Γ² Γ΄Γ―Γ°Γ―Γ¨ΓΓ΄Γ§Γ³Γ§ Γ°Γ±Γ©Γ­)
     Cout_tb,  -- Cout (1-bit output)
     Sum_tb    -- sum (4-bit output)
 );
