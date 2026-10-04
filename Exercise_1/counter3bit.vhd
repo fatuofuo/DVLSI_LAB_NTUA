@@ -39,10 +39,10 @@ signal count : std_logic_vector(2 downto 0);
 begin
 process(clk, resetn)
 begin
-    if resetn='0' then --ασυγχρονος μηδενισμος
+    if resetn='0' then --Γ΅Γ³ΓµΓ£Γ·Γ±Γ―Γ­Γ―Γ² Γ¬Γ§Γ¤Γ¥Γ­Γ©Γ³Γ¬Γ―Γ²
         count <= (others=>'0');
     elsif clk'event and clk='1' then
-        if count_en = '1' then -- Μέτρηση μόνο αν count_en='1'
+        if count_en = '1' then -- ΓΓΓ΄Γ±Γ§Γ³Γ§ Γ¬ΓΌΓ­Γ― Γ΅Γ­ count_en='1'
             case mode is
                 when '0' =>  count<=count-1;
                 when '1' =>
